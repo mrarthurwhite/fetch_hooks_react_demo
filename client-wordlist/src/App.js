@@ -33,3 +33,7 @@ function App() {
 }
 
 export default App;
+/**
+ *
+ * In functional components, you use the useEffect Hook to fetch data when the component loads or someinformation changes. For more information on the useEffect Hook, check out   How To Handle Async DataLoading, Lazy Loading, and Code Splitting with React. You’ll also need to save the results with the useState Hook.   
+ */
