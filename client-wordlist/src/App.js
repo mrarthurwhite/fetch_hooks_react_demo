@@ -7,17 +7,13 @@ function App() {
   const [words, setWords] = useState([]);
 
   useEffect(() => {
-                    let mounted = true;
                     fetch('http://localhost:4000/words')
                     .then(response => response.json())
                     .then (data =>
                                       {
-                                        if (mounted){
                                             setWords(data);
-                                        }
                                       } 
                                     )
-                      return () => mounted = false;
                   }, []
             )
 
